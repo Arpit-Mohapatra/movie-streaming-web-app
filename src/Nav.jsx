@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import netflix_logo from "./images/netflix-logo.png";
+import netflix_avatar from "./images/netflix-avatar.png";
 import "./Nav.css";
 const Nav = () => {
   const [show, setShow] = useState(false);
@@ -17,11 +19,11 @@ const Nav = () => {
     <div className={`nav ${show && "nav_black"}`}>
       <div className="nav_contents">
         <img
-          src="./images/netflix-logo.png"
+          src={netflix_logo}
           alt="netflix logo"
           className="nav_logo"
         />
-        <img src="./images/netflix-avatar.png" alt="" className="nav_avatar" />
+        <img src={netflix_avatar} alt="" className="nav_avatar" />
       </div>
     </div>
   );
